@@ -4,15 +4,16 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$720000$rvJXcXPmzOcswgu9KdDGis$SnGlbdS7tj59Fd97n1lj5FJh3wbJmjypg+QJnAx7G64=",
-    "last_login": null,
+    "last_login": "2024-04-05T01:15:10",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
     "last_name": "",
-    "email": "admin@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-14T21:23:15.343",
+    "date_joined": "2024-03-14T21:23:15",
+    "email": "admin@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -27,10 +28,11 @@
     "username": "alice",
     "first_name": "",
     "last_name": "",
-    "email": "alice@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:14:27.365",
+    "date_joined": "2024-03-21T22:14:27",
+    "email": "alice@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -45,10 +47,11 @@
     "username": "bob",
     "first_name": "",
     "last_name": "",
-    "email": "bob@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:14:33.295",
+    "date_joined": "2024-03-21T22:14:33",
+    "email": "bob@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -63,10 +66,11 @@
     "username": "carol",
     "first_name": "",
     "last_name": "",
-    "email": "carol@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:32.834",
+    "date_joined": "2024-03-21T22:15:32",
+    "email": "carol@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -81,10 +85,11 @@
     "username": "doug",
     "first_name": "",
     "last_name": "",
-    "email": "doug@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:38.340",
+    "date_joined": "2024-03-21T22:15:38",
+    "email": "doug@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -99,10 +104,11 @@
     "username": "ernie",
     "first_name": "",
     "last_name": "",
-    "email": "ernie@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:40.694",
+    "date_joined": "2024-03-21T22:15:40",
+    "email": "ernie@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -117,10 +123,11 @@
     "username": "fawn",
     "first_name": "",
     "last_name": "",
-    "email": "fawn@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:45.024",
+    "date_joined": "2024-03-21T22:15:45",
+    "email": "fawn@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -135,10 +142,11 @@
     "username": "george",
     "first_name": "",
     "last_name": "",
-    "email": "george@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:50.824",
+    "date_joined": "2024-03-21T22:15:50",
+    "email": "george@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -153,10 +161,11 @@
     "username": "harry",
     "first_name": "",
     "last_name": "",
-    "email": "harry@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:15:55.348",
+    "date_joined": "2024-03-21T22:15:55",
+    "email": "harry@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -171,10 +180,11 @@
     "username": "isabella",
     "first_name": "",
     "last_name": "",
-    "email": "isabella@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:16:00.414",
+    "date_joined": "2024-03-21T22:16:00",
+    "email": "isabella@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
@@ -189,10 +199,11 @@
     "username": "jessica",
     "first_name": "",
     "last_name": "",
-    "email": "jessica@example.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-03-21T22:16:06.405",
+    "date_joined": "2024-03-21T22:16:06",
+    "email": "jessica@example.com",
+    "email_is_verified": true,
     "groups": [],
     "user_permissions": []
   }
