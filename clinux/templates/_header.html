@@ -11,4 +11,13 @@
     <a href="{% url 'my-profile' %}">Il mio profilo</a>
 {% else %}
     <p>Benvenuto! Fai il <a href="{% url 'login' %}">Login</a></p>
+
+{% if pages_list %}
+    <ul>
+    {% for p in pages_list %}
+        <li><a href="{% url 'detail' p.slug %}">{{ p.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pages are available.</p>
 {% endif %}
