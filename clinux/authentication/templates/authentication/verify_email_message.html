@@ -1,0 +1,15 @@
+<div style="background-color: #c2c2c2; padding: 15px;">
+    <h2 style="margin: 0; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; background-color: #5497fd; color: #ffffff;">Verifica Email</h2>
+    <div style="margin: 0; padding: 15px; background-color: #ffffff;">
+        <p>Ciao {{ user.username }}</p>
+        <p>Hai creato un account su ConoscereLinux.com, è necessario che verifichi la tua email.</p>
+        <p>Per favore clicca nel bottone qui sotto per verificare la tua email.</p>
+        <br/>
+        <a href="{{ request.scheme }}://{{ domain }}{% url 'verify-email-confirm' uidb64=uid token=token %}" style="border: 0; color: #ffffff; background-color: #5497fd; padding: 15px; font-weight: bold; text-decoration: none; border-radius: 5px;">
+            Verifica email
+        </a>
+        <p style="margin-top: 40px;">Oppure copia il link qui sotto sul tuo browser</p>
+        <p>{{ request.scheme }}://{{ domain }}{% url 'verify-email-confirm' uidb64=uid token=token %}</p>
+        <p>Conoscere Linux</p>
+    </div>
+</div>
