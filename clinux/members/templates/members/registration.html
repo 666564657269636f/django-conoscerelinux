@@ -2,6 +2,10 @@
 
 {% block content %}
 
+<form method="POST" action="{{ request.path }}">
+{% csrf_token %}
 {{ form }}
+<input type="submit">Diventa membro</input>
+</form>
 
 {% endblock %}
