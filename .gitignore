@@ -174,8 +174,8 @@ cython_debug/
 .ionide
 
 ### ADD MIGRATIONS - TO DELETE WHEN GOIND PROD! ###
-clinux/authentication/migrations/
-clinux/events/migrations/
-clinux/members/migrations/
-clinux/pages/migrations/
+clinux/authentication/migrations/0*
+clinux/events/migrations/0*
+clinux/members/migrations/0*
+clinux/pages/migrations/0*
 ### ADD MIGRATIONS - TO DELETE WHEN GOIND PROD! ###
