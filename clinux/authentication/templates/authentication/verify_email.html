@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Verifica dell'email necessaria</h1>
+    <h2>Ti è stata inviata una email di verifica!</h2>
+
+    <p>Non l'hai ricevuta?</p>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Resend">
+    </form>
+{% endblock %}
