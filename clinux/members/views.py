@@ -1,5 +1,7 @@
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 
 from .models import Member
 
@@ -25,7 +27,13 @@ class RegistrationForm(forms.Form):
         pass
 '''
 
-class RegistrationView(CreateView):
+class RegistrationView(LoginRequiredMixin,CreateView):
+    login_url = "/auth/login/"
     model = Member
     template_name = "members/registration.html"
-    fields = "__all__"
+    fields = [field.name for field in Member._meta.fields if "user" not in field.name]
+    success_url = reverse_lazy("home")  
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
