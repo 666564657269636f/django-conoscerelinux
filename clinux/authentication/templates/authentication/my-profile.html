@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- FIXME: Add to CSS -->
+<h1 style="text-transform:uppercase">{{ user.username }}</h1>
+
+<p><strong>Email:</strong> {{ user.email }}</p>
+<p><strong>Nome:</strong> {{ user.first_name }}</p>
+<p><strong>Cognome:</strong> {{ user.last_name }}</p>
+<p><strong>Codice Fiscale:</strong> {{ user.member.social_id }}</p>
+<p><strong>Data di nascita:</strong> {{ user.member.birth_date }}</p>
+<p><strong>Luogo di nascita:</strong> {{ user.member.birth_city }}</p>
+<p><strong>Numero:</strong> {{ user.member.phone }}</p>
+
+<hr>x
+
+Eventi partecipati:
+
+{% endblock %}
