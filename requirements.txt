@@ -4,8 +4,6 @@
 #
 #    pip-compile --all-extras --output-file=requirements.txt pyproject.toml
 #
---extra-index-url https://pypi.ngc.nvidia.com
---trusted-host pypi.ngc.nvidia.com
 
 asgiref==3.7.2
     # via django
