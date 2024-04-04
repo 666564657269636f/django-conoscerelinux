@@ -30,9 +30,6 @@ class Member(models.Model):
         related_name="member",
     )
 
-    first_name = models.CharField(_("Name"), max_length=100)
-    last_name = models.CharField(_("Surname"), max_length=100)
-
     social_id = models.CharField(
         _("Social ID"),
         max_length=16,
@@ -68,15 +65,11 @@ class Member(models.Model):
         ],
     )
 
-    @property
-    def full_name(self) -> str:
-        return f"{self.first_name} {self.last_name}"
-
     def get_absolute_url(self):
         return reverse("member", kwargs={"pk": self.pk})
 
     def __str__(self):
-        return f"{self.full_name} ({self.social_id})"
+        return f"{self.user.first_name} {self.user.last_name} ({self.social_id})"
 
     class Meta:
         verbose_name = _("Member")

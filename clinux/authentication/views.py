@@ -32,3 +32,6 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('login')
+
+def my_profile(request):
+    return render(request, 'authentication/my-profile.html')
