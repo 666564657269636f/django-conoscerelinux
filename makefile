@@ -80,4 +80,4 @@ fixtures:
 	$(django) dumpdata pages --indent 2 > $(DJANGO_PROJECT)/pages/fixtures/pages/demo.json
 
 .PHONY: kamehameha
-kamehameha: init secret-key migrations db demo
+kamehameha: init migrations db demo
