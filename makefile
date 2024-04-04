@@ -70,13 +70,14 @@ db:
 
 .PHONY: demo
 demo:
-	$(django) loaddata authentication/demo members/demo events/demo
+	$(django) loaddata authentication/demo members/demo events/demo pages/demo
 
 .PHONY: fixtures 
 fixtures:
 	$(django) dumpdata members --indent 2 > $(DJANGO_PROJECT)/members/fixtures/members/demo.json
 	$(django) dumpdata events --indent 2 > $(DJANGO_PROJECT)/events/fixtures/events/demo.json
 	$(django) dumpdata authentication --indent 2 > $(DJANGO_PROJECT)/authentication/fixtures/authentication/demo.json
+	$(django) dumpdata pages --indent 2 > $(DJANGO_PROJECT)/pages/fixtures/pages/demo.json
 
 .PHONY: kamehameha
 kamehameha: init migrations db demo
