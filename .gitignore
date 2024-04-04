@@ -172,3 +172,10 @@ cython_debug/
 # Ignore all local history of files
 .history
 .ionide
+
+### ADD MIGRATIONS - TO DELETE WHEN GOIND PROD! ###
+clinux/authentication/migrations/
+clinux/events/migrations/
+clinux/members/migrations/
+clinux/pages/migrations/
+### ADD MIGRATIONS - TO DELETE WHEN GOIND PROD! ###

@@ -96,3 +96,7 @@ def verify_email_confirm(request, uidb64, token):
 
 def verify_email_complete(request):
     return render(request, 'authentication/verify_email_complete.html')
+
+
+def my_profile(request):
+    return render(request, 'authentication/my-profile.html')

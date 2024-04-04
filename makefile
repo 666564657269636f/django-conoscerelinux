@@ -78,3 +78,5 @@ fixtures:
 	$(django) dumpdata events --indent 2 > $(DJANGO_PROJECT)/events/fixtures/events/demo.json
 	$(django) dumpdata authentication --indent 2 > $(DJANGO_PROJECT)/authentication/fixtures/authentication/demo.json
 
+.PHONY: kamehameha
+kamehameha: init secret-key migrations db demo

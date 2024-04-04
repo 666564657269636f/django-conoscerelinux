@@ -7,6 +7,18 @@
 {% if user.is_authenticated %}
     <p>Ciao {{ user.username }}</p>
     <a href="{% url 'logout' %}">Logout</a>
+
+    <a href="{% url 'my-profile' %}">Il mio profilo</a>
 {% else %}
     <p>Benvenuto! Fai il <a href="{% url 'login' %}">Login</a></p>
+{% endif %}
+
+{% if pages_list %}
+    <ul>
+    {% for p in pages_list %}
+        <li><a href="{% url 'detail' p.slug %}">{{ p.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pages are available.</p>
 {% endif %}
