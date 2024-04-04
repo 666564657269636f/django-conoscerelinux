@@ -28,7 +28,7 @@ class RegistrationForm(forms.Form):
 '''
 
 class RegistrationView(LoginRequiredMixin,CreateView):
-    login_url = "/auth/login/"
+    login_url = reverse_lazy("login")
     model = Member
     template_name = "members/registration.html"
     fields = [field.name for field in Member._meta.fields if "user" not in field.name]
