@@ -15,8 +15,8 @@
 
 {% if pages_list %}
     <ul>
-    {% for p in pages_list %}
-        <li><a href="{% url 'detail' p.slug %}">{{ p.title }}</a></li>
+    {% for page in pages_list %}
+        <li><a href="{% url 'static-page' page.slug %}">{{ page.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
