@@ -10,9 +10,5 @@ def index(request):
     events = Event.objects.annotate(start=Max("sessions__start")).filter(
         start__gte=timezone.now()
     )
-    context = {
-        "message": "World!",
-        "events": events,
-        "pages_list": StaticPage.objects.all(),
-    }
+    context = {"message": "World!", "events": events}
     return render(request, "index.html", context)
